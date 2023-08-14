@@ -3,25 +3,34 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
 	<title>Resume</title>
 </head>
 <body>
-	<img src="XPs3Lml66rM.jpg" alt="моё фото">
-	<h1>Матвей Шаров</h1>
-	<p><strong>Я студент</strong>, и сейчас активно <strong>учюсь</strong> взаимодействию с <strong>HTML, CSS, JS.</strong></p>
-	<p>в свободное время я <em>изучаю историю, программирую, и интересуюсь 3D</em></p>
+<div class="content">
+	<div class="info-list">
+		<img src="./XPs3Lml66rM.jpg" alt="моё фото">
+		<div class="text-info">
+		<h1>Матвей Шаров</h1>
+		<p><strong>Я студент</strong>, и сейчас активно <strong>учюсь</strong> взаимодействию с <strong>HTML, CSS, JS.</strong></p>
+		<p>в свободное время я <em>изучаю историю, программирую, и интересуюсь 3D</em></p>
+	</div>
+	</div>
+	<div class="card bg-green">
 	<h2>Мои хобби</h2>
 
-	<ol>
+	<ol class="list">
 		<li>Программирование</li>
 		<li>Игры</li>
 		<li>3D моделирование</li>
 		<li>Боевые исскуства</li>
 	</ol>
+	</div>
 
+	<div class="card bg-red">
 	<h2>Dream Work</h2>
 
-	<table>
+	<table class="table">
 		<thead>
 			<th>Название</th>
 			<th>Досжность</th>
@@ -49,31 +58,33 @@
 			</tr>
 		</tbody>
 	</table>
+	</div>
 
+	<div class="card bg-yellow">
+	<form class="form">
 	<h2>Обратная Связь:</h2>
 
-	<form>
-		<div>
+	<div class="form-row">
+		<div class="form-group">
 			<label for="name">Ваше имя:</label>
 			<input type="text" id="name" placeholder="Введите имя">
 		</div>
 
-		<div>
+		<div class="form-group">
 			<label for="email">Ваш email:</label>
 			<input type="email" id="email" placeholder="Введите email">
 		</div>
+	</div>
 
-		<div>
-			<label for="text-area">Ваше имя:</label><br/>
-			<textarea id="text-area" cols="30" rows="5" placeholder="Введите сообщение. . ."></textarea>
+		<div class="form-group">
+			<label for="text-area">Ваше Сообщение:</label>
+			<textarea id="text-area" cols="15" rows="5" placeholder="Введите сообщение. . ."></textarea>
 		</div>
 
-	<button type="submit">Отправить!</button>
-	</form>
-
-	<br>
-
+	<button type="submit" class="btn">Отправить!</button>
 	<a href="https://vk.com/el_vorash" target="_blank">VK</a>
-
+	</form>
+	</div>
+</div>
 </body>
 </html>
